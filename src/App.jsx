@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import CustomEditor from "./components/CustomEditor";
 import Preview from "./components/Preview";
+import { DEFAULT_HTML } from "./constants";
 
 function App() {
   const [value, setValue] = useState("");
   const [showSavedToast, setShowSavedToast] = useState(false);
 
   useEffect(() => {
-    setValue(window.localStorage.getItem("html-value") || "");
+    setValue(window.localStorage.getItem("html-value") || DEFAULT_HTML);
   }, []);
 
   const handleSave = () => {
