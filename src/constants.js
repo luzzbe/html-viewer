@@ -1,5 +1,6 @@
 export const DEFAULT_HTML = `<!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,17 +13,24 @@ export const DEFAULT_HTML = `<!DOCTYPE html>
             background-color: #f4f4f4;
             color: #333;
         }
+
         h1 {
             color: #444;
         }
+
         p {
             margin: 20px 0;
         }
     </style>
 </head>
+
 <body>
     <h1>Bienvenue dans votre Visionneuse HTML</h1>
-    <p>Ceci est un paragraphe de texte pour vous aider à démarrer avec votre visionneuse HTML. Vous pouvez modifier ce texte selon vos besoins.</p>
+    <p>
+        Ceci est un paragraphe de texte pour vous aider à démarrer avec votre visionneuse HTML.
+        Vous pouvez modifier ce texte selon vos besoins.
+    </p>
 </body>
+
 </html>
 `;
