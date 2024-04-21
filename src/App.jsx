@@ -16,12 +16,25 @@ function App() {
   };
 
   return (
-    <div className="flex">
-      <div className="w-1/2">
-        <CustomEditor onChange={onChange} value={content} />
+    <div>
+      <div className="flex md:hidden h-screen justify-center items-center">
+        <div className="card w-96 bg-neutral text-neutral-content">
+          <div className="card-body items-center text-center">
+            <h2 className="card-title">Taille d&apos;écran non supportée</h2>
+            <p>
+              Pour une meilleure expérience, veuillez agrandir la fenêtre de
+              votre navigateur ou augmenter la résolution de votre écran.
+            </p>
+          </div>
+        </div>
       </div>
-      <div className="w-1/2">
-        <Preview content={content} />
+      <div className="hidden md:flex">
+        <div className="w-1/2">
+          <CustomEditor onChange={onChange} value={content} />
+        </div>
+        <div className="w-1/2">
+          <Preview content={content} />
+        </div>
       </div>
     </div>
   );
