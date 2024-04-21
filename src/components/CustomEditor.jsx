@@ -48,6 +48,5 @@ export default function CustomEditor({ onChange, value }) {
 
 CustomEditor.propTypes = {
   onChange: PropTypes.func.isRequired,
-  handleNew: PropTypes.func.isRequired,
   value: PropTypes.string.isRequired,
 };
