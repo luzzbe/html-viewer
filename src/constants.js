@@ -32,5 +32,4 @@ export const DEFAULT_HTML = `<!DOCTYPE html>
     </p>
 </body>
 
-</html>
-`;
+</html>`;
