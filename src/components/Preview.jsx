@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 
-export default function Preview({ value }) {
+export default function Preview({ content }) {
   return (
     <iframe
-      srcDoc={value}
+      srcDoc={content}
       className="bg-white w-full h-full border-0"
       sandbox=""
     />
@@ -11,5 +11,5 @@ export default function Preview({ value }) {
 }
 
 Preview.propTypes = {
-  value: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
 };
